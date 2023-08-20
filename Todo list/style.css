@@ -1,0 +1,92 @@
+*{
+   box-sizing: border-box;
+}
+
+body{
+   /* background-color: rgba(54, 6, 144, 0.403);    */
+   background-color: #E7E9F0;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+.form{
+   background-color: rgba(216, 213, 203, 0.826);
+   width: 500px;
+   height: 50px;
+   position: relative;
+   top:100px;
+   left: 50%;
+   transform: translateX(-50%);
+   border-radius: 8px;
+   padding: 10px;
+   display: flex;
+}
+.form .add{
+   border-radius: 5px;
+   border: none;
+   background-color: rgba(230, 40, 19, 0.797);
+   color: white;
+   width: 70px;
+   cursor: grabbing	;
+}
+.form .input{
+   border-radius: 5px;
+   outline: none;
+   border: none;
+   width: 400px;
+   margin-right: 10px;
+   padding-left: 5px;
+}
+/* ------------------ */
+
+.tasks ,.tasks-h{
+   background-color: rgba(216, 213, 203, 0.826);
+   width: 500px;
+   top:120px;
+   left: 50%;
+   position: relative;
+   transform: translateX(-50%);
+   border-radius: 8px;
+   padding: 10px;
+   display: grid;
+   row-gap: 10px;
+}
+.tasks .Task{
+   background-color: white;
+   border-radius: 5px;
+   position: relative;
+   display: grid;
+   grid-template-columns: 400px 50px;
+   /* grid-template-rows: 30px; */
+}
+.Task p{
+   padding-left: 5px;
+   height: 10px;
+   font-size: 12px;
+}
+.Task button{
+   position: absolute;
+   background-color: red;
+   border: none;
+   height: 20px;
+   color: white;
+   border-radius: 5px;
+   font-size: 10px;
+   margin-top: 5px;
+   right: 5px;
+   top: 2px;
+   cursor: grabbing	;
+}
+/* ------------------ */
+
+a{
+   background-color: rgba(0, 255, 17, 0.679);
+   border-radius: 5px;
+   color: white;
+   width: 70px;
+   cursor: grabbing	;
+   text-decoration: none;
+   font-size: 12px;
+   text-align: center;
+   padding-top: 8px;
+   margin-left: 8px;
+}
