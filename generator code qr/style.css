@@ -3,17 +3,62 @@ body{
    font-family: 'Exo 2', sans-serif;
    font-family: 'Work Sans', sans-serif;
    font-family: 'Yanone Kaffeesatz', sans-serif;
-   background-color: rgb(234, 205, 205);
+   background-color: rgba(68, 18, 232, 0.179);
 }
 
 main{
-   background-color: antiquewhite;
+   background-color: rgb(255, 255, 255);
    width: 500px;
+   height: 300px;
    position: relative;
    top:50%;
    left: 50%;
+   padding-left:15px;
+   padding-right:15px;
+   padding-bottom:30px;
    transform: translateX(-50%);
-}
+   box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;}
 main  div h2{
-   background-color: red;
+   background-color: rgba(68, 18, 232, 0.707);
+   letter-spacing: 1px;
+   color: white;
+   padding: 10px;
+}
+main .g-code-qr{
+   margin-bottom: 20px;
+   display: flex;
+   justify-content: space-around;
+}
+main .g-code-qr input{
+   width:300px;
+   height: 20px;
+   padding: 2px;
+   border: .5px solid black;
+}
+main .g-code-qr select{
+   width:75px;
+   height: 25px;
+   border: .5px solid black;
+}
+main .g-code-qr button{
+   background-color: rgb(16, 246, 4);
+   color: rgb(0, 0, 0);
+   border: .5px solid black; 
+   border-radius: 2px;
+   cursor: pointer;
+   font-weight: bold;
+}
+main .g-code-qr button:hover{
+   transform: translateY(-2px);
+   transition: .2s;
+}
+main .image{
+   display: flex;
+   justify-content: center;
+}
+main .image img{
+   width: 200px;
+   height: 200px;
+   box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+   border: 2px solid black;
 }
