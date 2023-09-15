@@ -11,3 +11,7 @@
    <img src="/Images All Apps/Todo-List.png">
 </div>
 <br>
+<div>
+   <h3>3-Generator code qr</h3>
+   <img src="">
+</div>
