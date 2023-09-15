@@ -13,5 +13,5 @@
 <br>
 <div>
    <h3>3-Generator code qr</h3>
-   <img src="">
+   <img src="/Images All Apps/codeqr.png">
 </div>
