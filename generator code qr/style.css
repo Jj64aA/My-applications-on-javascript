@@ -1,0 +1,19 @@
+body{
+   font-family: 'Dancing Script', cursive;
+   font-family: 'Exo 2', sans-serif;
+   font-family: 'Work Sans', sans-serif;
+   font-family: 'Yanone Kaffeesatz', sans-serif;
+   background-color: rgb(234, 205, 205);
+}
+
+main{
+   background-color: antiquewhite;
+   width: 500px;
+   position: relative;
+   top:50%;
+   left: 50%;
+   transform: translateX(-50%);
+}
+main  div h2{
+   background-color: red;
+}
