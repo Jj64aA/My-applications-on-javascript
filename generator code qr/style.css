@@ -4,25 +4,35 @@ body{
    font-family: 'Work Sans', sans-serif;
    font-family: 'Yanone Kaffeesatz', sans-serif;
    background-color: rgba(68, 18, 232, 0.179);
+   background-image: url("body.jpg");
 }
 
 main{
-   background-color: rgb(255, 255, 255);
+   background-color: rgba(255, 255, 255, 0.428);
    width: 500px;
-   height: 300px;
+   height: 320px;
    position: relative;
-   top:50%;
+   top:60px;
    left: 50%;
    padding-left:15px;
    padding-right:15px;
-   padding-bottom:30px;
+   padding-bottom:50px;
    transform: translateX(-50%);
+   border-radius: 10px;
+   position: relative;
    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;}
 main  div h2{
-   background-color: rgba(68, 18, 232, 0.707);
+   background-color: rgba(39, 3, 156, 0.776);
    letter-spacing: 1px;
    color: white;
    padding: 10px;
+   border-bottom: .5px solid rgba(255, 255, 255, 0.309); 
+   border-left: .5px solid rgba(255, 255, 255, 0.309); 
+   border-right: .5px solid rgba(255, 255, 255, 0.309);
+
+   border-radius: 0px 0px 10px 10px;
+   box-shadow: rgba(39, 3, 156, 0.428) 0px 5px, rgba(123, 83, 203, 0.3) 0px 10px, rgba(213, 170, 197, 0.2) 0px 15px, rgba(237, 179, 215, 0.1) 0px 20px;
+
 }
 main .g-code-qr{
    margin-bottom: 20px;
@@ -33,24 +43,41 @@ main .g-code-qr input{
    width:300px;
    height: 20px;
    padding: 2px;
+   background-color: rgba(240, 248, 255, 0.383);
    border: .5px solid black;
+   border-radius: 2px;
+   border:.5px solid rgba(255, 255, 255, 0.309);   
+   color: rgb(10, 10, 10);
+   outline: none;
 }
+ 
 main .g-code-qr select{
    width:75px;
    height: 25px;
-   border: .5px solid black;
+   border:.5px solid rgba(255, 255, 255, 0.309);   
+   background-color: rgba(240, 248, 255, 0.383);
+   color: white;
+   outline: none;
+   cursor: pointer;
+}
+main .g-code-qr select option{
+   background-color: rgba(0, 0, 0, 0.892);
 }
 main .g-code-qr button{
-   background-color: rgb(16, 246, 4);
-   color: rgb(0, 0, 0);
-   border: .5px solid black; 
-   border-radius: 2px;
+   background-color:rgba(39, 3, 156, 0.776);
+   color: white;
+   border: .5px solid rgba(255, 255, 255, 0.309); 
+   border-radius: 4px;
    cursor: pointer;
    font-weight: bold;
+   letter-spacing: 1px;
 }
 main .g-code-qr button:hover{
    transform: translateY(-2px);
    transition: .2s;
+   box-shadow: rgba(39, 3, 156, 0.428) 0px 5px, rgba(123, 83, 203, 0.3) 0px 10px, rgba(213, 170, 197, 0.2) 0px 15px, rgba(237, 179, 215, 0.1) 0px 20px, rgba(225, 185, 211, 0.05) 0px 25px;
+   border-radius: 4px;
+
 }
 main .image{
    display: flex;
@@ -59,6 +86,37 @@ main .image{
 main .image img{
    width: 200px;
    height: 200px;
-   box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
-   border: 2px solid black;
+   box-shadow: rgba(39, 3, 156, 0.428) 5px 5px 5px, rgba(123, 83, 203, 0.3) 10px 10px, rgba(213, 170, 197, 0.2) 15px 15px, rgba(237, 179, 215, 0.1) 20px 20px, rgba(225, 185, 211, 0.05) 25px 25px;
+   border: 2px solid rgb(254, 254, 254);
+   margin-top: 20px;
+}
+
+@media (max-width:600px) {
+   main{
+      width: 400px;;
+   }
+   main .g-code-qr input{
+      width:200px;
+   }   
+}
+@media (max-width:490px) {
+   main{
+      width: 350px;;
+   }
+   main .g-code-qr input{
+      width:150px;
+   }   
+}
+@media (max-width:410px) {
+   main{
+      width: 320px;;
+   }
+   main .g-code-qr{
+      margin-bottom: 20px;
+      flex-wrap: wrap;
+   } 
+   
+   main .g-code-qr input{
+      width:120px;
+   }   
 }

@@ -10,22 +10,25 @@
    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Exo+2&family=Work+Sans:wght@200;300;400;500;600;700;800&family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
 </head>
 <body>
-    <main>
+    <main id="app">
       <div>
          <h2>Genertor Code Qr</h2>
       </div>
       <div class="g-code-qr">
-          <input type="text">
-          <select name="" id="">
-            <option value="">100*100</option>
-            <option value="">150*150</option>
-            <option value="">200*200</option>
+          <input id="text-input" type="text">
+          <select class="select" onchange="select_()">
+            <option value="100">100x100</option>
+            <option value="150">150x150</option>
+            <option value="200">200x200</option>
          </select>
-          <button>Genertor Now</button>
+          <button onclick="click_bt()">Genertor Now</button>
       </div>
       <div class="image">
-         <img src="qr.png" alt="">
+         <img id="qrcode" src="qr.png" alt="...">
       </div>
     </main>
+
+    <script src="main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js"></script>
 </body>
 </html>
