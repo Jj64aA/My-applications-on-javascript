@@ -14,5 +14,6 @@
 <div>
    <h3>3-Generator code qr</h3>
    <a href="https://jj64aa.github.io/code-qr/">https://jj64aa.github.io/code-qr/<a/>
+   <br>
    <img src="/Images All Apps/codeqr.png">
 </div>
